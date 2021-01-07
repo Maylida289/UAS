@@ -1,0 +1,406 @@
+.maylida-slider { 
+  position: relative; 
+  overflow: hidden; 
+  background: #efefef;
+}
+ 
+.maylida-slider { 
+  margin:20px auto;
+  width: 1350px;
+  height: 400px; 
+}
+label {
+  margin: 10px auto;
+}
+.isi-slider img { 
+  width: 768px;
+  height: 400px; 
+  float: left;
+}
+ 
+.isi-slider { 
+  position: absolute; 
+  width:3900px;  
+  animation-name:slider;
+  animation-duration:16s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count:infinite;
+ }
+
+.isi-slider:hover { 
+  -webkit-animation-play-state:paused; 
+  -moz-animation-play-state:paused; 
+  -o-animation-play-state:paused; 
+  animation-play-state:paused; }
+}
+ 
+.isi-slider img { 
+  float: right; 
+}
+ 
+.maylida-slider:after { 
+  font-size: 150px; 
+  position: absolute; 
+  z-index: 12; 
+  color: rgba(255,255,255, 0); 
+  left: 300px; top: 80px; 
+  -webkit-transition: 1s all ease-in-out; 
+  -moz-transition: 1s all ease-in-out; 
+  transition: 1s all ease-in-out; 
+}
+ 
+.maylida-slider:hover:after { 
+  color: rgba(255,255,255, 0.6);  
+}
+ 
+@keyframes slider {     
+  0% {
+    left: 0; opacity: 0; 
+  }     
+  2% {
+    opacity: 1; 
+  }     
+  20% {
+    left: 0; opacity: 1; 
+    }   
+  25% {
+    left: -768px; opacity: 1; 
+  }     
+  45% {
+    left: -768px; opacity: 1; 
+  }        
+  50% {
+    left: -1536px; opacity: 1; 
+  }     
+  70% {
+    left: -1536px; opacity: 1; 
+  }       
+  75% {
+    left: -2304px; opacity: 1; 
+  }     
+  95% {
+    left: -2304px; opacity: 1; 
+  }     
+  97% { 
+    left: -2304px; opacity: 0; 
+  } 
+ 
+  100% {
+    left: 0; opacity: 0; 
+  }
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+  transition: .5s;
+  position: relative;
+  animation-play-state:paused;
+  top: 37px;
+}
+.card:hover{
+  box-shadow: red;
+}
+.container-fluid {
+  margin: : 40px auto;
+  padding: 30px;
+  height: 80px;
+  top: -10px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+  position: relative;
+  background :linear-gradient(to right, #66ffff 29%, #9900cc 100%);
+}
+nav .navbar-right{
+  margin-right: 10px;
+  padding: 20px;
+  size: 80%;
+}
+.maylidacantik:hover{
+  display: block;
+  transition: .20s;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.footer{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.footer.text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.footer .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+footer .text{
+    font-size: 100px;
+  font-weight: bold;
+  color: black;
+}
+.main-content{
+  display: flex;
+  background:  linear-gradient(to bottom, #33ccff 0%, #660033 109%);
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+  color: navy;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+    background-color: #84817a;
+    font-family: 'Ubuntu', sans-serif;
+}
+#wrapper {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    border-radius: 25px 25px 0 0;
+    margin-left: 150px;
+}
+#mae {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    border-radius: 25px 25px 0 0;
+    margin-right: 150px;
+    top: -150px;
+}
+#dwi {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    border-radius: 25px 25px 0 0;
+    margin-left: 150px;
+    top: -170px;
+}
+.overlay {
+    transition: background 0.5s ease;
+}
+#wrapper:hover .overlay {
+    display: block;
+    background-color: lightblue;
+}
+#mae:hover .overlay{
+  display: block;
+  background-color: yellow;
+}
+#dwi:hover .overlay{
+  display: block;
+  background-color: lightgreen;
+}
+img{
+    width: 400px;
+    border-radius: 25px 25px 0 0;
+}
+h1 {
+    position: absolute;
+    width: 400px;
+    left: 12;
+    top: 120px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    z-index: 1;
+    transition: top .5s ease;
+}
+
+.content p {
+    border-radius: 50px;
+    color: #E91E63;
+    line-height: 36px;
+}
+#wrapper:hover h1 {
+      top: 90px;
+}
+#mae:hover h1{
+  top: 90px;
+}
+#dwi:hover h1{
+  top: 90px;
+}
+.btn {
+    position: absolute;
+    width: 400px;
+    left:0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+.btn a:hover {
+    background-color: #E91E63;
+    color: white;
+    opacity: 0.7;
+}
+.btn a {
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+    border-radius: 50px;
+}
+#wrapper:hover .btn {
+      opacity: 1;
+}
+#mae:hover .btn{
+  opacity: 1;
+}
+#dwi:hover .btn{
+  opacity: 1;
+}

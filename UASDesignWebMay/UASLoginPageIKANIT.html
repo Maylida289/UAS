@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>LoginPage</title>
+  <link rel="stylesheet"href="loginpageIKANIT.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-dafault">
+  <div class="container-fluid">
+    <div class="navbar-right">
+    <ul class="nav navbar-nav">
+      <li><a href="alertlogin.html">Masuk</a></li>
+      <li><a href="alertlogin.html">Daftar</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</nav>
+ <div class="container">
+  <h1 class="label"> User Login</h1>
+  <form class="login_form" action="UASHomePageIKANIT.html" method="post" name="form" onsubmit="return validated()">
+    <div class="font">Email or phone </div>
+    <input autocomplete="off" type="text" name="email">
+    <div id="email_error">Please fill up your email or phone</div>
+    <div class="font font2">Password </div>
+    <input type="password" name="password">
+    <div id="pass_error">Please Fill Up Your Password</div>
+    <button type="submit">Login</button>
+  </form>
+</div>
+<script src="loginpage.js"></script>
+</div>
+</body>
+</html>
